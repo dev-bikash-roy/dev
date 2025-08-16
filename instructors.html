@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Instructors - AquaWind Kitesurfing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ocean-blue': '#0077be',
+                        'aqua': '#00bcd4',
+                        'sand': '#f5f1eb',
+                        'sunset': '#ff6b35',
+                        'wave': '#4dd0e1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white p-2 rounded-lg mr-3">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.5 3.8 7.7 9 10 5.2-2.3 9-4.5 9-10V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <a href="index.html" class="text-2xl font-playfair font-bold text-gray-900">AquaWind</a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Home</a>
+                    <a href="lessons.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Lessons</a>
+                    <a href="equipment.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Equipment</a>
+                    <a href="instructors.html" class="text-ocean-blue font-medium">Instructors</a>
+                    <a href="events.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Events</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Gallery</a>
+                    <a href="about.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">About</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium">
+                        Book Now
+                    </a>
+                </div>
+
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block text-gray-700 hover:text-ocean-blue py-2">Home</a>
+                    <a href="lessons.html" class="block text-gray-700 hover:text-ocean-blue py-2">Lessons</a>
+                    <a href="equipment.html" class="block text-gray-700 hover:text-ocean-blue py-2">Equipment</a>
+                    <a href="instructors.html" class="block text-ocean-blue py-2">Instructors</a>
+                    <a href="events.html" class="block text-gray-700 hover:text-ocean-blue py-2">Events</a>
+                    <a href="gallery.html" class="block text-gray-700 hover:text-ocean-blue py-2">Gallery</a>
+                    <a href="about.html" class="block text-gray-700 hover:text-ocean-blue py-2">About</a>
+                    <a href="blog.html" class="block text-gray-700 hover:text-ocean-blue py-2">Blog</a>
+                    <a href="contact.html" class="block text-gray-700 hover:text-ocean-blue py-2">Contact</a>
+                    <a href="contact.html" class="block bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full mt-4 text-center">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-r from-ocean-blue to-aqua" style="background-image: linear-gradient(rgba(0, 119, 190, 0.8), rgba(0, 188, 212, 0.8)), url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                Meet Our Team
+            </h1>
+            <p class="text-xl text-gray-100 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Learn from the best - our certified instructors are passionate about sharing their love for kitesurfing
+            </p>
+        </div>
+    </section>
+
+    <!-- Instructors Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sarah Mitchell -->
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b495?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sarah Mitchell" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Sarah Mitchell</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Head Instructor & Founder</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 3, First Aid</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 15+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Beginner instruction, Safety protocols</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, Spanish</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Sarah founded AquaWind with a vision to make kitesurfing accessible and safe for everyone. Her patient teaching style and extensive experience make her a favorite among beginners.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Sarah
+                    </a>
+                </div>
+
+                <!-- Jake Rodriguez -->
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jake Rodriguez" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Jake Rodriguez</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Operations Manager & Advanced Instructor</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 3, Water Rescue</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 12+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Advanced techniques, Freestyle</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, Portuguese</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Former professional rider turned instructor, Jake brings competition-level skills to his teaching. He specializes in advanced maneuvers and freestyle techniques.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Jake
+                    </a>
+                </div>
+
+                <!-- Emma Chen -->
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Emma Chen" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Emma Chen</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Lead Instructor</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 2, Yoga Instructor</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 8+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Women's programs, Mindful kitesurfing</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, Mandarin</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Emma combines her yoga background with kitesurfing instruction, focusing on body awareness and mindful progression. She leads our women's kitesurfing programs.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Emma
+                    </a>
+                </div>
+
+                <!-- More instructors... -->
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Marcus Thompson" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Marcus Thompson</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Senior Instructor</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 2, Surf Instructor</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 10+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Wave riding, Surf kiting</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, French</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Marcus brings his surfing background to kitesurfing, specializing in wave riding and surf kiting techniques. Perfect for students wanting to ride waves.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Marcus
+                    </a>
+                </div>
+
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Lisa Johnson" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Lisa Johnson</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Instructor</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 2, Youth Instructor</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 6+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Kids programs, Family lessons</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, German</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Lisa specializes in teaching kids and families, creating a fun and safe environment for young kiters to learn and progress in the sport.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Lisa
+                    </a>
+                </div>
+
+                <div class="bg-sand rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Alex Williams" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Alex Williams</h3>
+                    <p class="text-ocean-blue font-semibold mb-4">Assistant Instructor</p>
+                    <div class="text-left space-y-2 mb-6">
+                        <p class="text-sm text-gray-600"><strong>Certifications:</strong> IKO Level 1, First Aid</p>
+                        <p class="text-sm text-gray-600"><strong>Experience:</strong> 4+ years</p>
+                        <p class="text-sm text-gray-600"><strong>Specialties:</strong> Beginner support, Equipment setup</p>
+                        <p class="text-sm text-gray-600"><strong>Languages:</strong> English, Italian</p>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6">
+                        Alex is our newest instructor but brings enthusiasm and fresh energy to every lesson. Great with beginners and equipment preparation.
+                    </p>
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all duration-300">
+                        Book with Alex
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white p-2 rounded-lg mr-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.5 3.8 7.7 9 10 5.2-2.3 9-4.5 9-10V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-playfair font-bold text-white">AquaWind</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Experience the ultimate thrill of kitesurfing with professional instruction, premium equipment, and unmatched safety standards.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="lessons.html" class="hover:text-white transition-colors">Lessons</a></li>
+                        <li><a href="equipment.html" class="hover:text-white transition-colors">Equipment</a></li>
+                        <li><a href="instructors.html" class="hover:text-white transition-colors">Instructors</a></li>
+                        <li><a href="events.html" class="hover:text-white transition-colors">Events</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li>123 Beach Road, Ocean City</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>info@aquawind.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 AquaWind Kitesurfing. All rights reserved. | Template designed by <a href="https://developerbikash.com" class="text-aqua hover:text-white transition-colors">developerbikash.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

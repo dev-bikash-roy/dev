@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AquaWind Kitesurfing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ocean-blue': '#0077be',
+                        'aqua': '#00bcd4',
+                        'sand': '#f5f1eb',
+                        'sunset': '#ff6b35',
+                        'wave': '#4dd0e1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Navigation (same as homepage) -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white p-2 rounded-lg mr-3">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.5 3.8 7.7 9 10 5.2-2.3 9-4.5 9-10V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <a href="index.html" class="text-2xl font-playfair font-bold text-gray-900">AquaWind</a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Home</a>
+                    <a href="lessons.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Lessons</a>
+                    <a href="equipment.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Equipment</a>
+                    <a href="instructors.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Instructors</a>
+                    <a href="events.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Events</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Gallery</a>
+                    <a href="about.html" class="text-ocean-blue font-medium">About</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-ocean-blue transition-colors font-medium">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium">
+                        Book Now
+                    </a>
+                </div>
+
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block text-gray-700 hover:text-ocean-blue py-2">Home</a>
+                    <a href="lessons.html" class="block text-gray-700 hover:text-ocean-blue py-2">Lessons</a>
+                    <a href="equipment.html" class="block text-gray-700 hover:text-ocean-blue py-2">Equipment</a>
+                    <a href="instructors.html" class="block text-gray-700 hover:text-ocean-blue py-2">Instructors</a>
+                    <a href="events.html" class="block text-gray-700 hover:text-ocean-blue py-2">Events</a>
+                    <a href="gallery.html" class="block text-gray-700 hover:text-ocean-blue py-2">Gallery</a>
+                    <a href="about.html" class="block text-ocean-blue py-2">About</a>
+                    <a href="blog.html" class="block text-gray-700 hover:text-ocean-blue py-2">Blog</a>
+                    <a href="contact.html" class="block text-gray-700 hover:text-ocean-blue py-2">Contact</a>
+                    <a href="contact.html" class="block bg-gradient-to-r from-ocean-blue to-aqua text-white px-6 py-2 rounded-full mt-4 text-center">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-r from-ocean-blue to-aqua">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                Our Story
+            </h1>
+            <p class="text-xl text-gray-100 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Discover the passion and dedication behind AquaWind Kitesurfing
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="font-playfair text-4xl font-bold text-gray-900 mb-6">
+                        Born from Passion for the Ocean
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        AquaWind Kitesurfing was founded in 2015 by a group of passionate kitesurfing enthusiasts who wanted to share their love for this incredible sport with others. What started as weekend sessions with friends has grown into one of the most respected kitesurfing schools on the coast.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Our journey began when our founder, Sarah Mitchell, moved to the coast after years of traveling the world's best kitesurfing destinations. She realized that our local beach had perfect conditions but lacked proper instruction and safety standards.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Today, we've taught over 2,000 students, hosted international competitions, and built a community of riders who share our values of safety, respect for the ocean, and pure joy of flight.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <!-- Placeholder for image -->
+                    <div class="bg-gradient-to-br from-ocean-blue/20 to-aqua/20 rounded-2xl h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="w-24 h-24 text-ocean-blue mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <p class="text-gray-600">Team Photo Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Our Mission & Values
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To provide safe, professional, and inspiring kitesurfing education that connects people with the ocean and builds a lifelong passion for the sport.
+                    </p>
+                </div>
+
+                <!-- Safety -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Safety First</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every lesson, every piece of equipment, and every decision we make is guided by our unwavering commitment to safety and responsible kitesurfing practices.
+                    </p>
+                </div>
+
+                <!-- Community -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.98 1.98 0 0 0 18.07 7c-.8 0-1.54.5-1.85 1.26l-2.22 5.44-3.28-3.28A1 1 0 0 0 10 10H4a1 1 0 1 0 0 2h5.17l4.41 4.41c.39.39.9.59 1.42.59h6c.55 0 1-.45 1-1 0-.55-.45-1-1-1h-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Community</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We believe kitesurfing is more than a sport—it's a community. We foster connections, friendships, and shared adventures that last a lifetime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 bg-gradient-to-r from-ocean-blue to-aqua">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
+                    Our Impact
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center text-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">2000+</div>
+                    <div class="text-gray-100">Students Taught</div>
+                </div>
+                <div class="text-center text-white" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">9</div>
+                    <div class="text-gray-100">Years Experience</div>
+                </div>
+                <div class="text-center text-white" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">15</div>
+                    <div class="text-gray-100">Expert Instructors</div>
+                </div>
+                <div class="text-center text-white" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">50+</div>
+                    <div class="text-gray-100">Events Hosted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Meet Our Leadership
+                </h2>
+                <p class="text-xl text-gray-600">
+                    The passionate individuals driving our mission forward
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Leader 1 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-br from-ocean-blue/20 to-aqua/20 rounded-full w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-ocean-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Mitchell</h3>
+                    <p class="text-ocean-blue font-medium mb-2">Founder & Head Instructor</p>
+                    <p class="text-gray-600 text-sm">IKO Level 3 Instructor with 15 years of experience</p>
+                </div>
+
+                <!-- Leader 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-br from-ocean-blue/20 to-aqua/20 rounded-full w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-ocean-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Jake Rodriguez</h3>
+                    <p class="text-ocean-blue font-medium mb-2">Operations Manager</p>
+                    <p class="text-gray-600 text-sm">Former pro rider turned safety specialist</p>
+                </div>
+
+                <!-- Leader 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gradient-to-br from-ocean-blue/20 to-aqua/20 rounded-full w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-ocean-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Emma Chen</h3>
+                    <p class="text-ocean-blue font-medium mb-2">Lead Instructor</p>
+                    <p class="text-gray-600 text-sm">Specializes in beginner instruction and women's programs</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
+                <a href="instructors.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300">
+                    Meet All Instructors
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-sand">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Join Our Community
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Ready to be part of something bigger? Start your kitesurfing journey with us today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="lessons.html" class="bg-gradient-to-r from-ocean-blue to-aqua text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300">
+                    View Lessons
+                </a>
+                <a href="contact.html" class="border-2 border-ocean-blue text-ocean-blue hover:bg-ocean-blue hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white p-2 rounded-lg mr-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.5 3.8 7.7 9 10 5.2-2.3 9-4.5 9-10V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-playfair font-bold text-white">AquaWind</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Experience the ultimate thrill of kitesurfing with professional instruction, premium equipment, and unmatched safety standards.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="lessons.html" class="hover:text-white transition-colors">Lessons</a></li>
+                        <li><a href="equipment.html" class="hover:text-white transition-colors">Equipment</a></li>
+                        <li><a href="instructors.html" class="hover:text-white transition-colors">Instructors</a></li>
+                        <li><a href="events.html" class="hover:text-white transition-colors">Events</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li>123 Beach Road, Ocean City</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>info@aquawind.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 AquaWind Kitesurfing. All rights reserved. | Template designed by <a href="https://developerbikash.com" class="text-aqua hover:text-white transition-colors">developerbikash.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

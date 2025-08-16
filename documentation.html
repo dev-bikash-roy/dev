@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaWind Template Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ocean-blue': '#0077be',
+                        'aqua': '#00bcd4',
+                        'sand': '#f5f1eb',
+                        'sunset': '#ff6b35',
+                        'wave': '#4dd0e1',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="flex items-center justify-center mb-4">
+                <div class="bg-gradient-to-r from-ocean-blue to-aqua text-white p-3 rounded-lg mr-4">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.5 3.8 7.7 9 10 5.2-2.3 9-4.5 9-10V7l-10-5z"/>
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-playfair font-bold text-gray-900">AquaWind Template</h1>
+            </div>
+            <p class="text-xl text-gray-600">Setup & Customization Guide</p>
+            <p class="text-sm text-gray-500 mt-2">Version 1.0 | Template by <a href="https://developerbikash.com" class="text-ocean-blue hover:text-aqua">developerbikash.com</a></p>
+        </div>
+
+        <!-- Content -->
+        <div class="space-y-12">
+            <!-- Introduction -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Introduction</h2>
+                <p class="text-gray-600 mb-4">
+                    AquaWind is a modern, responsive HTML5 template designed specifically for kitesurfing businesses, schools, and events. 
+                    Built with Tailwind CSS, it offers a clean, professional design with beach-inspired colors and smooth animations.
+                </p>
+                <p class="text-gray-600">
+                    This template includes 9 essential pages, is fully responsive, and follows modern web standards for optimal performance and SEO.
+                </p>
+            </section>
+
+            <!-- File Structure -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">File Structure</h2>
+                <div class="bg-gray-100 p-4 rounded-lg font-mono text-sm">
+                    <pre>
+project-folder/
+├── index.html          (Default homepage)
+├── home-alt.html       (Alternative homepage)
+├── about.html          (About page)
+├── contact.html        (Contact & booking)
+├── lessons.html        (Lessons & courses) *
+├── equipment.html      (Equipment rental) *
+├── instructors.html    (Team members) *
+├── events.html         (Events & competitions) *
+├── gallery.html        (Photo gallery) *
+├── blog.html           (Blog page) *
+├── style.css           (Tailwind CSS)
+├── tailwind.config.js  (Tailwind configuration)
+├── documentation.html  (This file)
+└── assets/             (Images folder) *
+    ├── img/
+    └── icons/
+
+* = To be created based on your needs
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Setup Instructions -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Setup Instructions</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Basic Setup</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Upload all files to your web server</li>
+                            <li>Ensure all HTML files are in the root directory</li>
+                            <li>Create an 'assets' folder for images and other media</li>
+                            <li>Test all navigation links work correctly</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">2. Tailwind CSS Setup</h3>
+                        <p class="text-gray-600 mb-2">The template uses Tailwind CSS via CDN for easy setup. For production:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Install Tailwind CSS locally for better performance</li>
+                            <li>Use the included tailwind.config.js file</li>
+                            <li>Build your CSS file for production</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">3. Images & Media</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Add your kitesurfing images to assets/img/</li>
+                            <li>Update image placeholders throughout the template</li>
+                            <li>Optimize images for web (recommended: WebP format)</li>
+                            <li>Ensure alt text is added for accessibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customization Guide -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Customization Guide</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Colors</h3>
+                        <p class="text-gray-600 mb-3">The template uses a beach-inspired color palette:</p>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-ocean-blue rounded mr-3"></div>
+                                <span class="text-sm">ocean-blue: #0077be</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-aqua rounded mr-3"></div>
+                                <span class="text-sm">aqua: #00bcd4</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-sand rounded mr-3"></div>
+                                <span class="text-sm">sand: #f5f1eb</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-sunset rounded mr-3"></div>
+                                <span class="text-sm">sunset: #ff6b35</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-wave rounded mr-3"></div>
+                                <span class="text-sm">wave: #4dd0e1</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-3">To change colors, update the tailwind.config.js file.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Typography</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li><strong>Primary Font:</strong> Inter (body text, navigation)</li>
+                            <li><strong>Display Font:</strong> Playfair Display (headings, titles)</li>
+                            <li>Both fonts are loaded from Google Fonts</li>
+                            <li>To change fonts, update the Google Fonts link and Tailwind config</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Logo & Branding</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Replace "AquaWind" with your business name in all HTML files</li>
+                            <li>Update the logo SVG or replace with your image logo</li>
+                            <li>Ensure the logo is consistent across all pages</li>
+                            <li>Update the favicon.ico file</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Content Sections</h3>
+                        <p class="text-gray-600 mb-2">Each section is clearly commented in the HTML:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Hero sections with background images</li>
+                            <li>Service/feature cards</li>
+                            <li>Testimonials and reviews</li>
+                            <li>Contact forms with validation</li>
+                            <li>FAQ sections with accordion functionality</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Homepage Variations -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Homepage Variations</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Default Homepage (index.html)</h3>
+                        <p class="text-gray-600 mb-3">
+                            The main homepage features a dynamic gradient hero section with floating elements and comprehensive content sections including:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                            <li>Animated hero section with call-to-action buttons</li>
+                            <li>Features section highlighting key benefits</li>
+                            <li>Services overview with quick access cards</li>
+                            <li>Statistics section with impressive numbers</li>
+                            <li>Pricing packages with detailed comparisons</li>
+                            <li>Location highlights and benefits</li>
+                            <li>Community section showcasing social aspects</li>
+                            <li>Customer testimonials</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Alternative Homepage (home-alt.html)</h3>
+                        <p class="text-gray-600 mb-3">
+                            A split-layout alternative featuring a more modern design approach with:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                            <li>Split hero layout with content and visual sides</li>
+                            <li>Professional kitesurfing imagery</li>
+                            <li>Floating achievement cards</li>
+                            <li>Statistics prominently displayed in hero</li>
+                            <li>Services preview section</li>
+                            <li>Quick contact call-to-action</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">💡 Usage Tip</h4>
+                        <p class="text-gray-600 text-sm">
+                            Both homepages include a dropdown navigation menu allowing visitors to easily switch between the two layouts. 
+                            You can customize either version or use one as your main homepage and the other for A/B testing.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Template Features</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">✅ Included</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Fully responsive design</li>
+                            <li>2 homepage variations</li>
+                            <li>9+ essential pages</li>
+                            <li>Tailwind CSS styling</li>
+                            <li>AOS scroll animations</li>
+                            <li>Contact/booking forms</li>
+                            <li>FAQ accordion</li>
+                            <li>Mobile navigation</li>
+                            <li>Pricing packages section</li>
+                            <li>Statistics showcase</li>
+                            <li>Community features</li>
+                            <li>Location highlights</li>
+                            <li>Beach-inspired color palette</li>
+                            <li>Google Fonts integration</li>
+                            <li>W3C valid HTML5</li>
+                            <li>SEO-friendly structure</li>
+                            <li>Accessibility features</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">📝 Customization Needed</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Add your images and logos</li>
+                            <li>Update business information</li>
+                            <li>Configure contact forms</li>
+                            <li>Add Google Maps integration</li>
+                            <li>Connect social media links</li>
+                            <li>Set up analytics tracking</li>
+                            <li>Create additional pages</li>
+                            <li>Add blog functionality</li>
+                            <li>Implement booking system</li>
+                            <li>Configure payment processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browser Support -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Browser Support</h2>
+                <p class="text-gray-600 mb-4">This template supports all modern browsers:</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl mb-2">🌐</div>
+                        <div class="font-semibold">Chrome</div>
+                        <div class="text-sm text-gray-500">Latest</div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl mb-2">🦊</div>
+                        <div class="font-semibold">Firefox</div>
+                        <div class="text-sm text-gray-500">Latest</div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl mb-2">🧭</div>
+                        <div class="font-semibold">Safari</div>
+                        <div class="text-sm text-gray-500">Latest</div>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <div class="text-2xl mb-2">🌊</div>
+                        <div class="font-semibold">Edge</div>
+                        <div class="text-sm text-gray-500">Latest</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support -->
+            <section class="bg-white rounded-2xl p-8 shadow-sm">
+                <h2 class="text-3xl font-playfair font-bold text-gray-900 mb-6">Support & Credits</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Template Credits</h3>
+                        <p class="text-gray-600">
+                            Template designed and developed by <a href="https://developerbikash.com" class="text-ocean-blue hover:text-aqua font-medium">developerbikash.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Technologies Used</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>HTML5 & CSS3</li>
+                            <li>Tailwind CSS Framework</li>
+                            <li>AOS (Animate On Scroll) Library</li>
+                            <li>Google Fonts (Inter & Playfair Display)</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">License</h3>
+                        <p class="text-gray-600">
+                            This template is licensed for use on TemplateMonster. Please refer to your purchase license for usage terms.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Note -->
+            <div class="text-center py-8 border-t border-gray-200">
+                <p class="text-gray-500">
+                    Thank you for choosing AquaWind Template!<br>
+                    For support, please contact <a href="https://developerbikash.com" class="text-ocean-blue hover:text-aqua">developerbikash.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
