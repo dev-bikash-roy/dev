@@ -8,19 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
-                        'playfair': ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        'ocean-blue': '#0077be',
-                        'aqua': '#00bcd4',
-                        'sand': '#f5f1eb',
-                        'sunset': '#ff6b35',
-                        'wave': '#4dd0e1',
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            'inter': ['Inter', 'sans-serif'],
+                            'playfair': ['Playfair Display', 'serif'],
+                        },
+                        colors: {
+                            'ocean-blue': '#0077be',
+                            'aqua': '#00bcd4',
+                            'sand': '#f5f1eb',
+                            'sunset': '#ff6b35',
+                            'wave': '#4dd0e1',
+                        }
                     }
                 }
             }
